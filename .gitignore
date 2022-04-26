@@ -1,0 +1,6 @@
+# Forge artifacts
+cache/
+out/
+
+# dotenv config file
+.env

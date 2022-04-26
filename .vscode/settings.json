@@ -1,0 +1,39 @@
+{
+  "[solidity]": {
+    "editor.defaultFormatter": "NomicFoundation.hardhat-solidity",
+    "editor.rulers": [
+      120
+    ]
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+  "editor.rulers": [
+    80
+  ],
+  "files.exclude": {
+    "**/.editorconfig": false,
+    "**/.git*": false,
+    "**/.vscode": false,
+    "**/*.yml": false,
+    "**/cache": true,
+    "**/lib": true,
+    "**/LICENSE": false,
+    "**/out": true
+  },
+  "search.exclude": {},
+  "hardhat.telemetry": false,
+  "slither.solcPath": "",
+  "slither.hiddenDetectors": []
+  // "coverage-gutters.coverageBaseDir": "./coverage/",
+  // "coverage-gutters.coverageFileNames": ["lcov.info"],
+  // "coverage-gutters.showRulerCoverage": true,
+  // "coverage-gutters.coverageReportFileName": "./coverage/lcov-report/index.html",
+  //
+  // "solidity.compileUsingRemoteVersion": "v0.8.13",
+  // "solidity.formatter": "prettier",
+  // "solidity.linter": "solhint"
+}

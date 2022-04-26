@@ -1,0 +1,32 @@
+{
+  "image": "ghcr.io/cameo-engineering/set:latest",
+  "name": "🎬 Cameo Engineering Set",
+  "forwardPorts": [8545, 65520, 65522, 65523],
+  "portsAttributes": {
+    "8545": {
+      "label": "Hardhat Network",
+      "requireLocalPort": true
+    },
+    "65520": {
+      "label": "Remixd",
+      "requireLocalPort": true
+    },
+    "65522": {
+      "label": "Remixd Hardhat",
+      "requireLocalPort": true
+    },
+    "65523": {
+      "label": "Remixd Slither",
+      "requireLocalPort": true
+    }
+  },
+  "extensions": [
+    "bungcip.better-toml",
+    "editorconfig.editorconfig",
+    // "juanblanco.solidity",
+    "nomicfoundation.hardhat-solidity",
+    "mikestead.dotenv",
+    "ryanluker.vscode-coverage-gutters",
+    "skellock.just"
+  ]
+}

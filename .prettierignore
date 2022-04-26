@@ -1,0 +1,5 @@
+lib/
+
+# Forge artifacts
+cache/
+out/
