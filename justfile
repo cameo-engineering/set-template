@@ -30,18 +30,20 @@ default:
 @clean:
   forge clean
 
-@format:
-  prettier --config ./.prettierrc.toml --write "./**/*.{json,md,sol,yaml,yml}"
+@fix: (lint "--fix")
 
-@lint:
-  solhint --config ./.solhint.json --max-warnings 0 --fix  "./src/**/*.sol"
+@format:
+  npx prettier --config ./.prettierrc.toml --write "./**/*.{json,md,sol,yaml,yml}"
+
+@lint *FLAGS:
+  npx solhint --config ./.solhint.json --max-warnings 0 {{FLAGS}} "./src/**/*.sol"
 
 # Rebuild the project's smart contracts
 @rebuild *FLAGS: (build FLAGS "--force")
 
 # Start a two-way connection between the project and Remix IDE
 @remixd:
-  remixd --shared-folder ./ --remix-ide https://remix.ethereum.org
+  npx remixd --shared-folder ./ --remix-ide https://remix.ethereum.org
 
 # Print compiled contract sizes
 @sizes: (rebuild "--sizes")

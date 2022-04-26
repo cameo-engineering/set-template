@@ -1,7 +1,5 @@
 {
   "detectors_to_exclude": "naming-convention|solc-version",
   "filter_paths": "./lib/|./src/tests/",
-  "solc_remaps": [
-    "forge-std/=lib/forge-std/src/"
-  ]
+  "solc_remaps": ["forge-std/=lib/forge-std/src/"]
 }

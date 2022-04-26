@@ -20,6 +20,7 @@
       "requireLocalPort": true
     }
   },
+  "containerUser": "cameo",
   "extensions": [
     "bungcip.better-toml",
     "editorconfig.editorconfig",

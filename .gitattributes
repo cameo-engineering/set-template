@@ -8,3 +8,6 @@
 /.git*               export-ignore
 /.solhint*           export-ignore
 /slither.config.json export-ignore
+
+# Do not try to diff and merge these files
+package-lock.json -diff

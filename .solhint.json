@@ -1,8 +1,6 @@
 {
   "extends": "solhint:default",
-  "plugins": [
-    "prettier"
-  ],
+  "plugins": ["prettier"],
   "rules": {
     "avoid-call-value": "error",
     "avoid-low-level-calls": "off",
@@ -10,10 +8,7 @@
     "avoid-suicide": "error",
     "avoid-throw": "error",
     "check-send-result": "error",
-    "compiler-version": [
-      "error",
-      "^0.8.0"
-    ],
+    "compiler-version": ["error", "^0.8.0"],
     "const-name-snakecase": "error",
     "constructor-syntax": "error",
     "contract-name-camelcase": "error",
@@ -33,9 +28,7 @@
     "not-rely-on-block-hash": "off",
     "not-rely-on-time": "off",
     "ordering": "error",
-    "prettier/prettier": [
-      "error"
-    ],
+    "prettier/prettier": ["error"],
     "private-vars-leading-underscore": "off",
     "reentrancy": "error",
     "state-visibility": "error",
